@@ -1,0 +1,13 @@
+async function createUser() {
+    const user = new User({
+      name: 'John Doe',
+      email: 'john@example.com',
+      password: '12345'
+    });
+  
+    const result = await user.save();
+    console.log(result);
+  }
+  
+  createUser();
+  

@@ -1,0 +1,6 @@
+async function deleteUser(id) {
+  const result = await User.findByIdAndRemove(id);
+  console.log(result);
+}
+
+deleteUser('userId');

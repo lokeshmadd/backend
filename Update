@@ -1,0 +1,11 @@
+async function updateUser(id) {
+  const result = await User.findByIdAndUpdate(id, {
+    $set: {
+      name: 'Jane Doe'
+    }
+  }, { new: true });
+
+  console.log(result);
+}
+
+updateUser('userId');

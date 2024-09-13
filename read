@@ -1,0 +1,6 @@
+async function getUsers() {
+  const users = await User.find();
+  console.log(users);
+}
+
+getUsers();
